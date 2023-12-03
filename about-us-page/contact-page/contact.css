@@ -1,0 +1,72 @@
+.contact-title{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.contact-text{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+
+  margin-bottom:16px;
+}
+
+.contact-master{
+  padding:50px 100px 50px 100px;
+}
+
+.how-to-contact{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 30px;
+
+  margin:2px 2px;
+}
+
+.contact-info-master{
+  
+  display: inline-block;
+
+  flex:1;
+  border-radius: 20px;
+  padding:20px;
+  margin-right:20px;
+
+
+  background-color: aqua;
+}
+
+.contact-more-info{
+  vertical-align: middle;
+  background-color: orange;
+
+  flex:1;
+  margin-left:20px;
+  padding:20px;
+  border-radius: 20px;
+
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 30px;
+  
+}
+
+.contact-info{
+  display: flex;
+}
+
+.social-media-follow{
+  display:block;
+}
+
+.icons{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+.contact-general{
+  margin-bottom: 100px;;
+}

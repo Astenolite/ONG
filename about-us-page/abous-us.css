@@ -1,0 +1,22 @@
+.about-us-master{
+  padding:50px 100px 50px 100px;
+}
+
+.about-us-title{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.about-us-text{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+
+  margin-bottom:16px;
+  background-color: aqua;
+  padding:20px;
+  border-radius: 20px;
+}
+
