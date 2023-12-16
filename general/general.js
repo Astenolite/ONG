@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+
   const xhttp = new XMLHttpRequest();
 
   const absoluteURL = window.location.pathname;
@@ -20,11 +21,25 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   newPath += pathToFolder;
   console.log(newPath);
-  
+
 
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("masterHeader").innerHTML = xhttp.responseText;
+
+
+      //console.log(xhttp.responseText);
+
+      const tempDiv = document.createElement("div");
+      tempDiv.innerHTML = xhttp.responseText;
+
+      const imgElement = tempDiv.querySelector("#logo");
+      if (imgElement) {
+        imgElement.src = newPath + "LOGO Andra.svg";
+      } else {
+        console.log("Image element not found.");
+      }
+      document.getElementById("masterHeader").innerHTML = tempDiv.innerHTML;
 
       const script = document.createElement("script");
       script.src = newPath + "master-header.js";
@@ -37,7 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
-
+  
   xhttp.open("GET", newPath + "master-header.html", true);
+  console.log(xhttp.responseText);
+  
   xhttp.send();
 });
