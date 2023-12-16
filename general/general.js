@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const targetIndex = pathArray.indexOf("ONG");
   const pathToFolder = "general/master-header/";
   let newPath = "";
-  console.log(pathArray);
-  console.log(targetIndex);
+  // console.log(pathArray);
+  //console.log(targetIndex);
   if(targetIndex !== -1){
     for(let i=1; i<= pathArray.length-targetIndex-2; i++){
       newPath += "../";
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
   newPath += pathToFolder;
-  console.log(newPath);
+  //console.log(newPath);
 
 
   xhttp.onreadystatechange = function() {
@@ -55,6 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
   xhttp.open("GET", newPath + "master-header.html", true);
   console.log(xhttp.responseText);
-  
+
   xhttp.send();
 });
