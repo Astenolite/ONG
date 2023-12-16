@@ -9,17 +9,18 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log(pathArray);
   console.log(targetIndex);
   if(targetIndex !== -1){
-    newPath = pathArray.slice(0, targetIndex + 1).join('/');
-    console.log(newPath);
+    for(let i=1; i<= pathArray.length-targetIndex-2; i++){
+      newPath += "../";
+    }
   }else{
     const nrOfClimbs = pathArray.length - 2;
     for(let i =1; i<=nrOfClimbs; i++){
       newPath += "../";
     }
-    
   }
   newPath += pathToFolder;
   console.log(newPath);
+  
 
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
