@@ -19,6 +19,20 @@
 
   transition: height 0.5s;
   width: 60px;
+  
+}
+
+.bar-animation{
+  animation: growAnimation 1.5s ease-out; /* Add animation */
+}
+
+@keyframes growAnimation {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--bar-height);
+  }
 }
 
 .data-source{
