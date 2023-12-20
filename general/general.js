@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const absoluteURL = window.location.pathname;
   const pathArray = absoluteURL.split('/');
   const targetIndex = pathArray.indexOf("ONG");
-  const pathToFolder = "general/master-header/";
+  const pathToMasterHeader = "general/master-header/";
+  const pathToMasterFooter = "general/master-footer";
   let newPath = "";
   // console.log(pathArray);
   //console.log(targetIndex);
@@ -19,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
       newPath += "../";
     }
   }
-  newPath += pathToFolder;
-  //console.log(newPath);
+  //newPath += pathToMasterHeader;
+  let newPathMasterHeader = newPath + pathToMasterHeader, newPathMasterFooter = newPath + pathToMasterFooter;
 
 
   xhttp.onreadystatechange = function() {
@@ -35,25 +36,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const imgElement = tempDiv.querySelector("#logo");
       if (imgElement) {
-        imgElement.src = newPath + "LOGO Andra.svg";
+        imgElement.src = newPathMasterHeader + "LOGO Andra.svg";
       } else {
         console.log("Image element not found.");
       }
       document.getElementById("masterHeader").innerHTML = tempDiv.innerHTML;
 
       const script = document.createElement("script");
-      script.src = newPath + "master-header.js";
+      script.src = newPathMasterHeader + "master-header.js";
       document.body.appendChild(script);
 
       const link = document.createElement("link");
       link.rel = "stylesheet";
-      link.href = newPath + "header.css";
+      link.href = newPathMasterHeader + "header.css";
       document.body.appendChild(link);
+
+
     }
   };
 
-  
-  xhttp.open("GET", newPath + "master-header.html", true);
+  xhttp.open("GET", newPathMasterHeader + "master-header.html", true);
   console.log(xhttp.responseText);
 
   xhttp.send();
