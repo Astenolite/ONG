@@ -14,9 +14,11 @@ a{
   padding-left: 150px;
   padding-right: 150px;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .text-box-title{
+  font-weight: 500;
   font-size: 40px;
   background-color: #545691;
   color:white;
@@ -39,4 +41,28 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+ul {
+  list-style-type: disc;   /* Using filled circle as bullet point */
+  color:  #545691;              /* Changing bullet color */
+  
+}
+
+li{
+  padding: 10px;
+}
+
+.text-box-small-title{
+  font-weight: 500;
+  font-size: 25px;
+  background-color: #545691;
+  color:white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.text-box-separator{
+  padding:10px;
 }
