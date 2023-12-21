@@ -1,10 +1,38 @@
-document.addEventListener("DOMContentLoaded", function() {
-  insertRoboto();
+window.getRelativePath = function (){
   const absoluteURL = window.location.pathname;
   const pathArray = absoluteURL.split('/');
   const targetIndex = pathArray.indexOf("ONG");
+
+  let newPath = "", page = "";
+
+  if(targetIndex !== -1){
+    for(let i=1; i<= pathArray.length-targetIndex-2; i++){
+      newPath += "../";
+    }
+    page = pathArray[targetIndex + 1];
+  }else{
+    const nrOfClimbs = pathArray.length - 2;
+    for(let i =1; i<=nrOfClimbs; i++){
+      newPath += "../";
+    }
+    page = pathArray[1];
+  }
+  return {newPath, page};
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  insertRoboto();
+  
   const pathToMasterHeader = "general/master-header/";
   const pathToMasterFooter = "general/master-footer/";
+
+
+/*
+  const absoluteURL = window.location.pathname;
+  const pathArray = absoluteURL.split('/');
+  const targetIndex = pathArray.indexOf("ONG");
   let newPath = "";
 
   if(targetIndex !== -1)
@@ -15,9 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
     for(let i = 1; i <= nrOfClimbs; i++)
       newPath += "../";
   }
-  let newPathMasterHeader = newPath + pathToMasterHeader;
-  let newPathMasterFooter = newPath + pathToMasterFooter;
-
+  
+  console.log("general.js: ", newPath);
+  */
+  let newPathMasterHeader = window.getRelativePath().newPath + pathToMasterHeader;
+  let newPathMasterFooter = window.getRelativePath().newPath + pathToMasterFooter;
   const xhttp = new XMLHttpRequest(); //creates an XMLH element to get the gile requested
 
   xhttp.open("GET", newPathMasterHeader + "master-header.html", true); // Gets the file requested
@@ -73,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.appendChild(link);
 
       const script = document.createElement("script");
-      script.src = newPathMasterHeader + "master-footer.js";
+      script.src = newPathMasterFooter + "master-footer.js";
       document.body.appendChild(script);
 
     }
