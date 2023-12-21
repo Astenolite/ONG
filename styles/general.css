@@ -53,6 +53,11 @@ li{
   padding: 10px;
 }
 
+.inner-bullet-point-list{
+  list-style-type: upper-roman;
+}
+
+
 .text-box-small-title{
   font-weight: 500;
   font-size: 25px;

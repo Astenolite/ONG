@@ -76,25 +76,6 @@ document.addEventListener("DOMContentLoaded", function() {
       script.src = newPathMasterHeader + "master-footer.js";
       document.body.appendChild(script);
 
-      /*
-      const imgElement = tempDiv.querySelector("#logo");
-      if (imgElement) {
-        imgElement.src = newPathMasterHeader + "LOGO Andra.svg";
-      } else {
-        console.log("Image element not found.");
-      }
-      
-      */
-
-      /*
-      
-
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = newPathMasterHeader + "header.css";
-      document.body.appendChild(link);
-      */
-
     }
   };
   
@@ -103,9 +84,9 @@ insertRoboto();
 
 /*
 <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 */
 
 function insertRoboto(){

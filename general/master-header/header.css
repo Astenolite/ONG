@@ -117,10 +117,5 @@
   box-sizing: border-box; /* Include padding and border in the total width and height */
 }
 .main-header-button:hover{
-  
   cursor: pointer;
-}
-
-.test2{
-  background-color: aqua;
 }
