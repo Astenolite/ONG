@@ -20,6 +20,12 @@
   font-weight: 500;
 }
 
+.header-button-row{
+  display: flex;
+  flex-grow:1;
+  justify-content: right;
+}
+
 
 
 .button-menu{
@@ -30,7 +36,7 @@
 .logo{
   align-items: center;
   display: flex;
-  width:100%;
+  
   height:100%;
 }
 
@@ -54,10 +60,8 @@
   font-size: 22px;
 
   border-width: 0;
-  padding:0;
-  margin: 8px;
-
-  width:250px;
+  padding:16px;
+  justify-self: right;
 }
 .header-button:hover{
   background-color: #545691;
@@ -102,11 +106,12 @@
   font-weight: 300;
   font-size: 22px;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   
-  width:100%;
+  
+  
   height:64px;
   
   padding: 0; /* Removed default padding */

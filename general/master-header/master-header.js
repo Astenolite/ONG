@@ -3,8 +3,8 @@ function getButton(name) {
 }
 
 let currentButton;
-let pageList = ['about-us-page','project-page', 'donate-page', 'volunteer-page' ];
-let buttonList = [getButton('about-us-button'), getButton('project-button'), getButton('donate-button'), getButton('volunteer-button')];
+let pageList = ['about-us-page','project-page', 'donate-page', 'volunteer-page', 'contact-page' ];
+let buttonList = [getButton('about-us-button'), getButton('project-button'), getButton('donate-button'), getButton('volunteer-button'), getButton('contact-button')];
 
 /*
 for(let i=0; i<buttonList.length; i++){
@@ -12,6 +12,7 @@ for(let i=0; i<buttonList.length; i++){
 }*/
 
 const currPage_Header = window.getRelativePath().page;
+console.log(currPage_Header);
 for(let i=0; i<buttonList.length; i++){
   if(currPage_Header != pageList[i]){
     buttonList[i].style.fontWeight = 300;
