@@ -31,6 +31,7 @@ function createPieSlice(percentage, color){
   pieSlice.classList.add("pie-slice");
   pieSlice.style.setProperty("--percentage", percentage + "px");
   pieSlice.style.stroke = color;
+  pieSlice.innerHTML = "hello";
   return pieSlice;
 }
 

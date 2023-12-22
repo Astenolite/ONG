@@ -98,6 +98,24 @@
   height:300px;
 }
 
+.pie-chart_legend{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+}
+
+.legend{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.pie-charts-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 
 .svg-canvas-pie-chart{
   position: absolute;
@@ -108,6 +126,8 @@
   display: block;
   width: 100%;
   height: 100%;
+
+  padding: 10px;
 
   --circumference: 100;
   --percentage: 100;
