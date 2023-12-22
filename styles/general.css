@@ -8,6 +8,11 @@ a{
   text-decoration: none;
 }
 
+.general-link{
+  color:#545691;
+  text-decoration: underline;
+}
+
 .text-box{
   font-family: Roboto;
   padding-top: 25px;

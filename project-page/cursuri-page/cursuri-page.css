@@ -11,6 +11,7 @@
 .curs-info{
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .start-menu{
