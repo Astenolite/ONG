@@ -1,0 +1,5 @@
+to upload changes{
+  git add .
+  git commit -m "name_of_update"
+  git push origin main
+}
