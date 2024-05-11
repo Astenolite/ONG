@@ -55,6 +55,7 @@
 
 .social-media-follow{
   display:block;
+  color: black;
 }
 
 .icons{
@@ -65,4 +66,9 @@
 
 .contact-general{
   margin-bottom: 100px;;
+}
+
+.social-media-link{
+  color: white;
+  text-decoration: none;
 }
