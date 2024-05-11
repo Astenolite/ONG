@@ -1,0 +1,39 @@
+.master-footer{
+  color: white;
+  margin-top: 100px;
+  padding:50px 50px 50px 50px;
+  height:200px;
+
+  background-color: #5c6873;
+  display: flex;
+}
+
+.master-footer-box{
+  display: flex;
+  color:white;
+  padding: 20px;
+  flex-direction: column;
+  font-size: 20px;
+  flex: 1;
+  align-items: center;
+}
+
+.master-footer-link{
+  justify-content: left;
+  color:white;
+  text-decoration: none;
+}
+
+.master-footer-link:hover{
+  color: #F5A003
+}
+
+.master-footer-text-box{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-self: left;
+}
+
+.master-footer-box-title{
+  font-size: 30px;
+}

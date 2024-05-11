@@ -1,0 +1,78 @@
+body{
+  margin:0;
+  padding-top: 172px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.general-link{
+  color:#545691;
+  text-decoration: underline;
+}
+
+.text-box{
+  font-family: Roboto;
+  padding-top: 25px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-box-title{
+  font-weight: 500;
+  font-size: 40px;
+  background-color: #545691;
+  color:white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.text-box-text{
+  padding:10px;
+}
+
+.page-title{
+  font-family: Roboto;
+
+  color: #545691;
+  background-color: #fce496;
+
+  font-size: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: disc;   /* Using filled circle as bullet point */
+  color:  #545691;              /* Changing bullet color */
+  
+}
+
+li{
+  padding: 10px;
+}
+
+.inner-bullet-point-list{
+  list-style-type: upper-roman;
+}
+
+
+.text-box-small-title{
+  font-weight: 500;
+  font-size: 25px;
+  background-color: #545691;
+  color:white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.text-box-separator{
+  padding:10px;
+}

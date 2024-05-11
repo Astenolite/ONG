@@ -1,0 +1,51 @@
+.cursuri-master{
+  padding:50px 100px 50px 100px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:100px;
+}
+
+
+
+.curs-info{
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.start-menu{
+  border-radius: 20px;
+  
+  display:flex;
+  height:150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+
+.drop-down{
+  display: none;
+  padding: 10px;
+  font-size: 20px;
+
+  width:auto;
+}
+
+.details{
+  padding-top: 5px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.actual-details{
+  color:#545691;
+  display: inline-block;
+}
+
+.curs-info:hover .drop-down{
+  background-color: #C0CCF7;
+}
+.curs-info:hover .start-menu {
+  background-color: #C0CCF7;
+}

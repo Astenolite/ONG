@@ -1,0 +1,35 @@
+.project-master{
+  padding:50px 100px 50px 100px;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:100px;
+  row-gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-preview{
+  display: flex;
+  justify-content: center; /* Center the div horizontally */
+  align-items: center; /* Center the div vertically */
+
+
+  border-radius: 10%;
+  background-color: #5c5da0;
+  height:650px;
+}
+
+.project-text{
+  color: white;
+  font-size: 50px;
+}
+
+
+.project-button{
+  background-color: transparent;
+  border-width: 0;
+  width:100%
+}
+.project-button:hover{
+  cursor: pointer;
+}

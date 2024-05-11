@@ -1,0 +1,168 @@
+
+.chart-container {
+
+  justify-content: center;
+  height: 300px;
+
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+
+.complete-chart{
+  padding:150px;
+}
+
+.bar {
+  margin: 0 50px;
+  background-color: #F5A003;
+
+  transition: height 0.5s;
+  width: 60px;
+  
+}
+
+.bar-animation{
+  animation: growAnimation 2s ease-out; /* Add animation */
+}
+
+@keyframes growAnimation {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--bar-height);
+  }
+}
+
+.data-source{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 24px;
+}
+
+.link{
+  font-weight: bold;
+  color: #545691
+}
+
+.scale-labels{
+  display: flex;
+  flex-direction: column;
+}
+
+.label{
+  display: flex;
+  height: 60px;
+  width: 12px;
+  justify-content: right;
+  align-items: flex-end;
+
+  margin-bottom: -10px;
+  margin-top: 10px;
+  margin-right: -40px;
+}
+
+.scale-line {
+  margin-left: 25px;
+  position: absolute;
+  height: 1px;
+  width: 600px;
+
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+.line0{
+  height: 1px;
+}
+
+.line1{
+  height: 60px;
+}
+
+.line2{
+  height: 120px;
+}
+
+.line3{
+  height:180px;
+}
+
+.line4{
+  height: 240px;
+}
+
+.line5{
+  height:300px;
+}
+
+.pie-chart_legend{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+}
+
+.legend{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.pie-charts-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.svg-canvas-pie-chart{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  transform: rotate(-90deg);
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  padding: 10px;
+
+  --circumference: 100;
+  --percentage: 100;
+}
+
+.pie-chart-box{
+  margin:10px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: inline-block;
+}
+
+.pie-slice{
+  fill: rgba(0,0,0,0);
+  stroke-dasharray: 0 var(--circumference);
+  stroke-width: 31.85px;
+}
+
+.pie-animation{
+  animation-name: pieAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes pieAnimation{
+  to
+  {
+    stroke-dasharray: var(--percentage) var(--circumference);
+  }
+}
+
+
+
+
